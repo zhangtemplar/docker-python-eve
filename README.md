@@ -15,6 +15,7 @@
 
 ## Usage
 Pull it from the official docker registry.
+
 `docker pull nicolaevladescu/python-eve:<tag>`
 
 Test that python is installed and working:
@@ -25,11 +26,11 @@ The default `CMD` runs a `python main.py` from `/src`.
 
 You can mount a folder from the host to `/src` and run it with the default `CMD`.
 
-`docker run --rm --volume $(pwd):/src --name python-eve nicolaevladescu/python-eve:2.7`
+`docker run --detach --volume $(pwd):/src --name python-eve nicolaevladescu/python-eve:2.7`
 
 Or run a file other than `main.py`.
 
-`docker run --rm --volume $(pwd):/src --name python-eve nicolaevladescu/python-eve:2.7 python run.py`
+`docker run --detach --volume $(pwd):/src --name python-eve nicolaevladescu/python-eve:2.7 python run.py`
 
 ## To-do
 * Replace `gosu` with `su-exec` because it's only 10kb instead of 1.8MB. Use the alpine linux package manager (`apk add --no-cache 'su-exec>=0.2'`)
