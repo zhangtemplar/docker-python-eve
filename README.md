@@ -14,7 +14,7 @@
 
 
 ## Usage
-Pull it from the official docker registry.
+Pull it from the official docker registry:
 
 `docker pull nicolaevladescu/python-eve:<tag>`
 
@@ -28,7 +28,7 @@ You can mount a folder from the host to `/src` and run it with the default `CMD`
 
 `docker run --detach --volume $(pwd):/src --name python-eve nicolaevladescu/python-eve:2.7`
 
-Or run a file other than `main.py`.
+Or run a file other than `main.py`:
 
 `docker run --detach --volume $(pwd):/src --name python-eve nicolaevladescu/python-eve:2.7 python run.py`
 
