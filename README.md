@@ -9,8 +9,8 @@
 * `curl`
 
 ## Tags
-1. `python2`
-2. `python3`
+1. `2.7` : [(2.7.12/Dockerfile)]()
+2. `3.5` : [(3.5.2/Dockerfile)]()
 
 [1]: http://python-eve.org
 [2]: https://www.alpinelinux.org/
