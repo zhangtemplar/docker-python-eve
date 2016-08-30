@@ -5,13 +5,16 @@
 ## What's inside
 * [Alpine Linux][2]
 * [dumb-init][3]
-* `python`
+* [gosu][4]
 * `curl`
+* `gnupg`
+* `python`
 
 ## Tags
 1. `2.7` : [(2.7.12/Dockerfile)](2.7.12/Dockerfile)
 2. `3.5` : [(3.5.2/Dockerfile)](3.5.2/Dockerfile)
 
 [1]: http://python-eve.org
-[2]: https://www.alpinelinux.org/
+[2]: https://www.alpinelinux.org
 [3]: https://github.com/Yelp/dumb-init
+[4]: https://github.com/tianon/gosu
