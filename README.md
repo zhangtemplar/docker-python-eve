@@ -33,7 +33,7 @@ Or run a file other than `main.py`:
 `docker run --detach --volume $(pwd):/src --name python-eve nicolaevladescu/python-eve:2.7 python run.py`
 
 ## To-do
-* Replace `gosu` with `su-exec` because it's only 10kb instead of 1.8MB. Use the alpine linux package manager (`apk add --no-cache 'su-exec>=0.2'`)
+* Replace `gosu` with `su-exec` because it's only 10KB instead of 1.8MB.
 
 [1]: http://python-eve.org
 [2]: https://www.alpinelinux.org
