@@ -23,8 +23,8 @@ RUN set -ex -o pipefail; \
     && gosu nobody true \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* \
-    && pip install --upgrade pip \
-    && pip install eve
+    && pip3 install --upgrade pip \
+    && pip3 install eve
 
 WORKDIR /src
 
@@ -34,4 +34,4 @@ EXPOSE 8000
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 
-CMD ["python", "main.py"]
+CMD ["python3", "main.py"]
