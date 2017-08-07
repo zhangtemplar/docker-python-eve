@@ -24,7 +24,7 @@ RUN set -ex -o pipefail; \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* \
     && pip3 install --upgrade pip \
-    && pip3 install eve
+    && pip3 install git+git@github.com:pyeve/eve.git@673bc3c475c4f659a0765c321660e7e875847b87
 
 WORKDIR /src
 
