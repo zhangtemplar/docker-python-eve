@@ -21,7 +21,7 @@ RUN set -ex -o pipefail; \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* \
     && pip3 install --upgrade pip \
-    && pip3 install pyeve
+    && pip3 install eve
 
 WORKDIR /src
 
