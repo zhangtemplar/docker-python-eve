@@ -21,7 +21,7 @@ RUN set -ex -o pipefail; \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* \
     && pip install --upgrade pip \
-    && pip install eve
+    && pip install eve eve-swagger redis
 
 WORKDIR /src
 
